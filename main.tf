@@ -9,7 +9,7 @@ resource "aws_elastic_beanstalk_application" "application" {
 resource "aws_elastic_beanstalk_environment" "environment" {
   name                = "82_environment"
   application         = aws_elastic_beanstalk_application.application.name
-  solution_stack_name = "64bit Amazon Linux 2 v3.2.1 running Python 3.8 "
+  solution_stack_name = "64bit Amazon Linux 2 v3.2.1 running Python 3.8"
   setting {
         namespace = "aws:autoscaling:launchconfiguration"
         name      = "IamInstanceProfile"
